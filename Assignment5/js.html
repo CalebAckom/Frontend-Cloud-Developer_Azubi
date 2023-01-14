@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and HTML</title>
+</head>
+<body>
+    <h1>JavaScript makes HTML pages more dynamic and interactive</h1>
+    <img id="bb" src="./assets/BB.jpg" alt="BB">
+    <p>This is the logo for Boys' Brigade</p>
+    <img id="gb" src="./assets/GB.jpg" alt="GB">
+    <p>This is the logo for Girls' Brigade</p>
+    <button onclick="changeImage()">Click Here!</button>
+    <script>
+        function changeImage() {
+            // Change size of first image and add border
+            document.getElementById('bb').style.width = '500px';
+            document.getElementById('bb').style.border = '1px solid blue';
+
+            // Change the color, background, font size, font family and position of the description
+            const paragraphs = document.getElementsByTagName('p');
+            paragraphs[0].style.color = 'black';
+            paragraphs[0].style.background = 'grey';
+            paragraphs[0].style.fontSize = '20px';
+            paragraphs[0].style.fontFamily = 'Arial';
+            paragraphs[0].style.textAlign = 'center';
+
+            // Change the second image to a third image
+            document.getElementById('gb').src = './assets/Cal.jpg';
+            document.getElementById('gb').alt = 'cal';
+            document.getElementById('gb').style.width = '500px';
+        }
+    </script>
+    <noscript>
+        <p>The button will not work because JavaScript is disabled or not supported by your browser.</p>
+    </noscript>
+</body>
+</html>
