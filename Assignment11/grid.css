@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    /* font: 1rem 400 #fff; */
+    line-height: 1.5;
+    text-align: left;
+    
+}
+
+div.heading {
+    color: #fff;
+    font-size: large;
+    text-align: center;
+}
+
+.container {
+    background-color: #235375;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    align-items: center;
+}
