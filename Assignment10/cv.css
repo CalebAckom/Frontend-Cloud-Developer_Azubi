@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10%;
+    align-items: center;
+    width: 60%;
+}
+
+h1 {
+    font: bold, 24px;
+    color: blue;
+    background-color: lightgray;
+    text-align: center;
+    letter-spacing: 1.6em;
+    word-spacing: 2em;
+    margin: 0 5px;
+}
+
+h1, h2 {
+    font-family: Georgia;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: darkred;
+    font-size: 18px;
+    letter-spacing: 1.4em;
+    margin-left: 5px;
+}
+
+form {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+span.title {
+    font-style: italic;
+    margin: 5px;
+}
+
+h2, p, span {
+    justify-content: left;
+}
+
+h2, span {
+    padding-left: 20px;
+}
+
+.years {
+    font-weight: bold;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+.years, .description {
+    display: inline-flexbox;
+}
+
+div span, div p {
+    display: inline-block;
+}
+
+div p {
+    margin-left: 20px;
+    justify-content: left;
+}
