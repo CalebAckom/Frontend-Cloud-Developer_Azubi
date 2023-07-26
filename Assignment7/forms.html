@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <!-- <style>
+        /*body {
+            display: flex;
+            flex-direction: row;
+        }*/
+        * {
+            box-sizing: border-box;
+        }
+        form {
+            display: block;
+        }
+        h1 {
+            color: red;
+            background-color: yellow;
+            text-align: center;
+            border: 2px solid black;
+            padding: 5px;
+            margin: 10px;
+        }
+        input[type=text],
+        input[type=password],
+        select,
+        textarea,
+        option {
+            background: white;
+            display: inline-block;
+            border: none;
+            padding: 10px;
+            margin: 5px 0 22px 0;
+            width: 100%;
+        }
+        label {
+            margin-left: 1.5em;
+           
+        }
+       
+        input {}
+        form {
+            position: relative;
+            align-items: center;
+            height: 100%;
+            width: 50%;
+            border: 5px solid gray;
+        }
+        #buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            display: inline-block;
+        }
+        div {
+            position: relative;
+            background-color: aqua;
+            border: 1px solid black;
+            height: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style> -->
+    <link rel="stylesheet" href="./forms.css">
+</head>
+
+<body>
+    <form action="">
+        <h1>Registration Form</h1>
+        <div class="container">
+            <section class="name">
+                <div class="left">
+                    <label for="name" class="titles">Enter Name</label>
+                </div>
+                <div class="right">
+                    <input type="text" name="name" id="name">
+                </div>
+            </section>
+            <section class="password">
+                <div class="left">
+                    <label for="password">Enter Password</label>
+                </div>
+                <div class="right">
+                    <input type="password" name="password" id="password">
+                </div>
+            </section>
+            <section class="email">
+                <div class="left">
+                    <label for="email">Enter Address</label>
+                </div>
+                <div class="right">
+                    <textarea name="email" id="email" cols="30" rows="5"></textarea>
+                </div>
+            </section>
+            <section class="game">
+                <div class="left">
+                    <label for="">Select Game</label>
+                </div>
+                <div class="right">
+                    <div class="games">
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <caption>Hockey</caption>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <caption>Football</caption>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <caption>Badminton</caption>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <caption>Cricket</caption>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <caption>volleyball</caption>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gender">
+                <div class="left">
+                    <label for="">Gender</label>
+                </div>
+                <div class="right">
+                    <div class="gender">
+                        <div>
+                            <input type="radio" name="gender" id="gender" value="male" checked>
+                            <caption>Male</caption>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="gender" value="female">
+                            <caption>Female</caption>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="age">
+                <div class="left">
+                    <label for="age">Select ur age</label>
+                </div>
+                <div class="right">
+                    <select name="age" id="age">
+                        <option value="select">Select</option>
+                        <option value="twelve">12</option>
+                        <option value="thirteen">13</option>
+                    </select>
+                </div>
+            </section>
+            <section class="image">
+                <div class="left">
+                    <label for="image">Select Photo</label>
+                </div>
+                <div class="right">
+                    <input type="file" id="image" name="name">
+                </div>
+            </section>
+            <section class="footer">
+                <button>Click Me</button>
+                <button>Reset</button>
+                <button>Submit Form</button>
+            </section>
+        </div>
+    </form>
+</body>
+
+</html>

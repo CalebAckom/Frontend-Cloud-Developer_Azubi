@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  align-items: center;
+  width: 100%;
+  font-size: larger;
+}
+form {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  border: 5px solid gray;
+  align-items: center;
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+h1 {
+  border: 1px solid black;
+  padding: 5px;
+  background-color: lightyellow;
+  text-align: center;
+  color: red;
+  width: 100%;
+}
+section {
+  display: flex;
+  gap: 10px;
+  width: inherit;
+  justify-items: stretch;
+  margin: 3px;
+}
+.left {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5ac5ff;
+  padding: 10px;
+}
+.right {
+  flex: 0.6;
+  display: flex;
+  padding: 10px;
+  background: #5ac5ff;
+}
+.right .games {
+  display: flex;
+  flex-direction: column;
+}
+.right .gender,
+.right .gender div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5ac5ff;
+  padding: 10px;
+}
+.footer button {
+  padding: 8px;
+}
